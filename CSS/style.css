@@ -1,0 +1,156 @@
+:root {
+    --color-primary: #0c2631;
+    --color-primary-light: #081c2c;
+    --color-primary-dark: rgb(9, 22, 39);
+    --color-grey-light-1: #020b14;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+    --color-grey-dark-1: rgba(0, 0, 0, 0.63);
+    --color-text: #8b9dc3;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-grey-dark-2);
+    background-image: linear-gradient(to right bottom, var(--color-primary-light) 0%, var(--color-primary) 50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 87.5vh;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    align-items: center;
+    letter-spacing: .1rem;
+    border-bottom: 1px solid var(--color-grey-light-4);
+}
+
+.navigation__brand {
+    margin-left: 0rem;
+}
+
+.navigation__brand-link {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.navigation__menu-1,
+.navigation__menu-2 {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navigation__item {
+    padding: 0 1.2rem;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.btn {
+    border: 1px solid var(--color-primary);
+    padding: .9rem 3.3rem;
+    border-radius: 100px;
+    color: var(--color-primary);
+    background-color: #fff;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    outline: none;
+}
+
+.btn:focus {
+    animation: pulsate infinite 2s;
+    -webkit-animation: pulsate infinite .9s;
+}
+
+.scroll__control {
+    overflow-y: auto;
+}
+
+.scroll__control::-webkit-scrollbar {
+    display: hidden;
+}
+
+.heading {
+    height: 74.2vh;
+    padding: 6rem 1.5rem;
+    background-image: url("../img/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg");
+    background-size: cover;
+    background-position: left;
+    color: #fff;
+}
+
+.heading__wrapper {
+    width: 30%;
+}
+
+.heading__content {
+    border-left: 5px solid purple;
+    padding: .2rem 1.5rem;
+    margin: 2.9rem 0;
+}
+
+.heading__primary {
+    color: var(--color-text);
+    font-size: 2.6rem;
+    text-transform: capitalize;
+}
+
+.img__control {
+    width: 40%;
+}
+
+.project-markup {
+    margin: 3rem 3rem;
+    height: 70vh;
+}
+
+@keyframes pulsate {
+    from {
+        transform: translateY(1rem) scaleX(0.9);
+        -webkit-transform: translateY(1rem) scaleX(0.9);
+        -moz-transform: translateY(1rem) scaleX(0.9);
+        -ms-transform: translateY(1rem) scaleX(0.9);
+        -o-transform: translateY(1rem) scaleX(0.9);
+    }
+    to {
+        transform: translateY(0rem);
+        -webkit-transform: translateY(0rem);
+        -moz-transform: translateY(0rem);
+        -ms-transform: translateY(0rem);
+        -o-transform: translateY(0rem);
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 4rem auto;
+    background-color: var(--color-grey-light-1);
+    box-shadow: 2rem 2rem 6rem rgba(0, 0, 0, 0.8);
+}
